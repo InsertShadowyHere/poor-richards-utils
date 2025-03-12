@@ -1,7 +1,7 @@
 import requests
 # testing
 
-SPORT_KEYWORDS = ['season', 'series', 'US Open', 'football', 'baseball', 'soccer', 'NCAA', 'NHL', 'NFL', "FIFA", 'championship', 'world cup', 'tournament', 'rugby']
+SPORT_KEYWORDS = ['season', 'series', 'us open', 'football', 'baseball', 'soccer', 'ncaa', 'nhl', 'nfl', "fifa", 'championship', 'world cup', 'tournament', 'rugby', "fc", "mlb", "f.c", 'tennis', 'rugby', 'league', 'wrestling', 'skating', 'career statistics', 'grand prix', 'formula 1', 'wimbledon']
 
 
 def is_election(title):
@@ -10,6 +10,7 @@ def is_election(title):
     return False
 
 def is_sport(title):
+    title = title.lower()
     for keyword in SPORT_KEYWORDS:
         if keyword in title:
             return True
