@@ -1,5 +1,5 @@
 # This file contains all the logic required to run a basic game.
-# It needs some work.
+# It needs some work lol
 
 class Entity:
     def __init__(self, name, health, attack):
